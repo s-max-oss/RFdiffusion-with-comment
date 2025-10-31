@@ -1,0 +1,20 @@
+# config/inference/character.yaml
+defaults:
+  - base
+
+inference:
+  character_input: true
+  character_text: "A"
+  # 可以添加更多字符生成专用参数
+  character_scale: 10.0
+  character_density: 5
+  character_spacing: 15.0
+
+sampling:
+  # 针对字符生成调整的采样参数
+  num_steps: 100
+  final_step: 0
+  
+output:
+  # 输出相关设置
+  prefix: "../outputs/character_generation"
